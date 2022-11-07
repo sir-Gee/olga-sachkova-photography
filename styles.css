@@ -74,6 +74,15 @@ a:link{
   text-decoration:none;
 }
 
+#middle-text {
+  padding-top: 322px;
+  padding-left: 55px;
+  color: rgba(255,255,255,0.55);
+  text-transform: uppercase;
+  letter-spacing: 1.2em;
+  font-size: 62px;
+}
+
 .grid-container {
   display: grid;
   grid-template-areas:
