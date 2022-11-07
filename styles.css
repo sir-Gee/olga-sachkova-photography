@@ -54,6 +54,10 @@ a:hover {
     color: antiquewhite;
 }
 
+a.active {
+    text-decoration: underline;
+}
+
 .grid-container {
   display: grid;
   grid-template-areas:
