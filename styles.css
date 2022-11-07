@@ -4,8 +4,13 @@ body {
   font-family: 'Anton', serif;
 }
 
+header {
+  background-color: black;
+}
+
 a:link {
   text-decoration: none;
+  color: azure;
 }
 
 ul {
