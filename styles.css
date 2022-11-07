@@ -24,6 +24,7 @@ li {
 .menu-item {
   display: inline-flex;
   padding: 15px;
+  font-size: 25px;
 }
 
 #logo { 
