@@ -46,8 +46,12 @@ li {
 /* .item4 { grid-area: right; } */
 /* .item5 { grid-area: footer; } */
 
-a, a:visited, a:hover, a:active {
+a, a:visited, a:active {
     color: azure;
+}
+
+a:hover {
+    color: antiquewhite;
 }
 
 .grid-container {
