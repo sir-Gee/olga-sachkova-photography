@@ -5,6 +5,8 @@ body {
 
 header {
   background-color: #f1f1f1;
+  position: fixed;
+  width: 100%;
 }
 
 #logo-link { 
