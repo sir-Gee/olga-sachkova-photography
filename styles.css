@@ -20,8 +20,8 @@ li {
   display: inline-flex;
 }
 
-.logo { grid-area: header; }
-.main-menu { grid-area: menu; }
+#logo { grid-area: header; }
+#main-menu { grid-area: menu; }
 /* .item3 { grid-area: main; } */
 /* .item4 { grid-area: right; } */
 /* .item5 { grid-area: footer; } */
