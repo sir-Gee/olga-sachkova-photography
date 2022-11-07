@@ -16,6 +16,10 @@ li {
   display: inline-flex;
 }
 
+.menu-item {
+  display: inline-flex;
+}
+
 .logo { grid-area: header; }
 .main-menu { grid-area: menu; }
 /* .item3 { grid-area: main; } */
