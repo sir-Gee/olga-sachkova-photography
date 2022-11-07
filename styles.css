@@ -2,3 +2,12 @@ body {
   background-image: url('main_background.jpg');
   background-repeat: no-repeat;
 }
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex-inline;
+  position: relative;
+}
