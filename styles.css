@@ -46,6 +46,10 @@ li {
 /* .item4 { grid-area: right; } */
 /* .item5 { grid-area: footer; } */
 
+a, a:visited, a:hover, a:active {
+    color: azure;
+}
+
 .grid-container {
   display: grid;
   grid-template-areas:
