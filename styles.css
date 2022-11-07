@@ -13,6 +13,11 @@ a:link {
   color: azure;
 }
 
+#logo-link { 
+  padding-top: 30px;
+  padding-left: 20px;
+}
+
 ul {
   list-style: none;
 }
