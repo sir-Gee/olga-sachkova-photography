@@ -1,6 +1,7 @@
 body {
   background-image: url('main_background.jpg');
   background-repeat: no-repeat;
+  font-family: 'Anton', serif;
 }
 
 a:link {
