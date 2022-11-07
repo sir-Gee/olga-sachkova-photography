@@ -25,7 +25,10 @@ li {
   padding: 15px;
 }
 
-#logo { grid-area: header; }
+#logo { 
+  grid-area: header; 
+  font-size: x-large;
+}
 #main-menu { grid-area: menu; }
 /* .item3 { grid-area: main; } */
 /* .item4 { grid-area: right; } */
@@ -34,5 +37,5 @@ li {
 .grid-container {
   display: grid;
   grid-template-areas:
-    'header header header header menu menu';
+    'header header header header header menu';
 }
