@@ -18,6 +18,7 @@ li {
 
 .menu-item {
   display: inline-flex;
+  padding: 15px;
 }
 
 #logo { grid-area: header; }
