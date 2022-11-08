@@ -132,4 +132,9 @@ a:hover {
   scroll-margin-top: 100px;
 }
 
+#sprout-iframe-booking-page {
+  position:absolute;
+  top: 100px;
+}
+
 
