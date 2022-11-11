@@ -203,3 +203,9 @@ footer{
   left:50%;
 }
 
+div#sprout-wrapper {
+    width: 100%;
+    top: 92px;
+    position: relative;
+}
+
