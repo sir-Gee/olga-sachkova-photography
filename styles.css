@@ -107,18 +107,18 @@ a:hover {
 #about{
   position:absolute;
   top:1000px;
-  height:400px;
+  height: 365px;
   width:100%;
-  background:#f1f1f1;
+  background: #F1F1F0;
   scroll-margin-top: 100px;
 }
 
 #packages{
   position:absolute;
-  top:2000px;
-  height:100px;
+  top: 1365px;
+  height: 600px;
   width:100%;
-  background:#f1f1f1;
+  background: #F1F2F9;
   scroll-margin-top: 100px;
 }
 
@@ -161,4 +161,24 @@ a:hover {
 
 h2{
   text-align:center;
+}
+
+.aboutMeText {
+  color: rgba(77,77,77,1);
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Playfair Display';
+  font-weight: 400;
+  font-style: normal;
+}
+
+.package{
+  display:inline-block;
+  width:32%;
+  height:500px;
+  margin:5px;
+  background-color: #F1F5D1;
 }
