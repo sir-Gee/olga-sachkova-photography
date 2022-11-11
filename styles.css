@@ -182,3 +182,24 @@ h2{
   margin:5px;
   background-color: #F1F5D1;
 }
+
+footer{
+  position:absolute;
+  height:100px;
+  width:100%;
+  top: 4500px;
+  background-color:#a1a8ad
+}
+
+.social-media{
+  width:30px;
+  display: inline-block;
+
+}
+
+#social-media-wrapper{
+  position: relative;
+  margin:20px;
+  left:50%;
+}
+
