@@ -1,59 +1,164 @@
 <html><head>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:regular|Montserrat:regular|Raleway:regular|Montserrat:200" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-<body>
-  <header>
-    <div class="grid-container">
-      <div id="logo" class="header_menu">
-        <a id="logo-link" href="#">OLGA SACHKOVA PHOTOGRAPHY</a>
-    </div>
-    <div id="main-menu" class="header_menu">   
-      <div>  
+  <body>
+    <header>
+      <div class="grid-container">
+        <div id="logo" class="header_menu">
+          <a id="logo-link" href="#">OLGA SACHKOVA PHOTOGRAPHY</a>
+        </div>
         <div>
+          <a href="index.html">
+            <img id="logo-img" src="logo.jpg"></img>
+          </a>
+        </div>
+        <div id="main-menu" class="header_menu">   
           <ul id="menu" class="header_menu-items">
-            <li id="menu-item-home" class="menu-item"><a href="/index">HOME</a></li>
-            <li id="menu-item-about" class="menu-item"><a href="/index#about">ABOUT</a></li>
-            <li id="menu-item-info" class="menu-item"><a href="/index#packages">PACKAGES</a></li>
-            <li id="menu-item-portfolio" class="menu-item"><a href="/portfolio">PORTFOLIO</a></li>
-             <li id="menu-item-portfolio" class="menu-item"><a href="/index#guide">GUIDE</a></li>
-            <li id="menu-item-contact" class="menu-item"><a href="/index#sprout-iframe">CONTACT</a></li>
-            <li id="menu-item-contact" class="menu-item"><a href="/book">BOOK</a></li>
+                <li id="menu-item-home" class="menu-item"><a href="index.html">HOME</a></li>
+                <li id="menu-item-about" class="menu-item"><a href="#about">ABOUT</a></li>
+                <li id="menu-item-packages" class="menu-item"><a href="#packages">PACKAGES</a></li>
+                <li id="menu-item-portfolio" class="menu-item"><a href="portfolio.html">GALLERY</a></li>
+                <li id="menu-item-guide" class="menu-item"><a href="#guide">GUIDE</a></li>
+                <li id="menu-item-contact" class="menu-item"><a href="#sprout-iframe">CONTACT</a></li>
+                <li id="menu-item-book" class="menu-item"><a href="book.html">BOOK</a></li>    
           </ul>
         </div>
       </div>
+    </header>
+
+    <div class="dropdown">
+      <button class="dropbtn">MENU</button>
+      <div class="dropdown-content">
+        <a href="index.html">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#packages">PACKAGES</a>
+        <a href="portfolio.html">GALLERY</a>
+        <a href="#guide">GUIDE</a>
+        <a href="#sprout-iframe">CONTACT</a>
+        <a href="book.html">BOOK</a>
+      </div>
     </div>
-  </div>
-</header>
-<div id="middle-text">OLGA <br>SACHKOVA</div>
-    <div id="about" class="aboutMeText"><h2>Welcome To Olga Sachkova Photography</h2>
-    <p>Hey y'all. I am a badass photographer. You better hire me now!</p>
-</div>
-
-<div id="packages" class="aboutMeText">
-  <h2 class="">My packages</h2>
-  <div class="wrapPack">
-    <div class="package">Package 1</div>
-    <div class="package">Package 2</div>
-    <div class="package">Package 3</div>
-  </div>
-</div>
-<iframe id="sprout-iframe" src="//api.sproutstudio.com/leads/viewform/63960f8653369144f9460cbbf74557385d997f3f8eb53e6e/636870" frameborder="0" scrolling="no" style="display: block; margin: 0px; padding: 0px; width: 1px; min-width: 100%; height: 1200px; overflow:hidden;"></iframe>
-<footer>
-    <div id="social-media-wrapper">
-        <div id="facebook" class="social-media">
-            <a href="https://www.facebook.com/olgasachkovaphotography">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50" style="null" class="icon icons8-Facebook-Filled">    <path d="M40,0H10C4.486,0,0,4.486,0,10v30c0,5.514,4.486,10,10,10h30c5.514,0,10-4.486,10-10V10C50,4.486,45.514,0,40,0z M39,17h-3 c-2.145,0-3,0.504-3,2v3h6l-1,6h-5v20h-7V28h-3v-6h3v-3c0-4.677,1.581-8,7-8c2.902,0,6,1,6,1V17z"></path></svg>
-            </a>
-        </div>
-        <div id="insta" class="social-media">
-            <a href="https://instagram.com/frauberry">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
-            </a>
-        </div>
+    <!-- <div id="mobile-menu">
+      <button id="menu-btn" onclick="toggleMenu()">Menu</button>
+      <div id="mobile-menu-item">
+          <ul>
+              <li><a href="index.html" onclick="toggleMenu()">HOME</a></li>
+              <li><a a href="#about" onclick="toggleMenu()">About</a></li>
+              <li><a href="#packages" onclick="toggleMenu()">packages</a></li>
+              <li><a href="/portfolio" onclick="toggleMenu()">portfolio</a></li>
+              <li><a href="#guide" onclick="toggleMenu()">guide</a></li>
+              <li><a href="#sprout-iframe" onclick="toggleMenu()">Contact</a></li>
+              <li><a href="book.html" onclick="toggleMenu()">Book</a></li>
+            </ul>
+      </div>
+    </div> -->
+    <div id="image-wrapper">
+      <img id="hero-img" src="main_background.jpg">
+      <div id="middle-text">OLGA <br>SACHKOVA</div>
     </div>
-</footer>
-<script src="index.js"></script>
+    
+    <div id="about" name="about" class="aboutMeText"><h2><b>Welcome To Olga Sachkova Photography</b></h2>
+      <div id="aboutMe-wrapper">
+          <p>Hi, I'm Olga! I'm a visual artist specializing in compelling outdoor portraits.
+            From family portraits to romantic engagement shoots, anniversaries, child portraits, 
+            and every moment in between, I'm here to provide wonderful, lasting memories for you. 
+            I'm based in Davie but am able to travel within the South Florida area. 
+          </p>
+      </div>
+      </div>
+    <div id="packages">
+      <h2><b>Packages</b></h2>
+      <div class="wrapPack">
 
+        <!-- Package 1 -->
+        <div class="package">
+          <div class="container">
+            <img class="photo image" src="package1.jpg">
+            <div class="overlay">
+              <div class="text">3 people , 15 digits, Package does not include detailed editing</div>
+              <a href="book.html">
+                <div class="package-text">Book</div>
+              </a>
+            </div>
+          </div>
+          <div class="description description-desktop">1-HOUR FAMILY OUTDOOR SESSION<br>$320</div>
+          <div class="description description-mobile">1-HR FAMILY OUTDOOR SESSION<br>$320</div>
+        </div>
+        <!-- End of Package 1 -->
 
-</body></html>
+        <!-- Package 2 -->
+        <div class="package">
+          <div class="container">
+            <img class="photo image" src="package2.jpg">
+            <div class="overlay">
+              <div class="text">1 person , 10 digits, Package includes detailed editing</div>
+              <a href="book.html">
+                <div class="package-text">Book</div>
+              </a>
+            </div>
+          </div>
+          <div class="description">1-HOUR OUTDOOR PORTRAIT SESSION <br>$320</div>
+        </div>
+        <!-- End of Package 2 -->
+
+        <!-- Package 3 -->
+        <div class="package">
+          <div class="container">
+            <img class="photo image" src="package3.jpg">
+            <div class="overlay">
+              <div class="text">3 people , 15 digits, Package does not include detailed editing</div>
+                <a href="book.html">
+                <div class="package-text">Book</div>
+              </a>
+            </div>
+          </div>
+          <div class="description">20 MINS FAMILY OUTDOOR MINI SESSION<br>$150</div>
+        </div>
+        <!-- End of Package 3 -->
+
+      </div>
+    </div>
+    
+    <!-- Guide section -->
+    <div id="guide">
+      <h2><b>Guide section</b></h2>
+    </div>
+
+    <div id="testimonials">
+      <div>
+        <h2><b>Testimonials</b></h2>
+        <div id="testimonial-div">
+          <img id="testimonial-img" src="testimonial_bg1.jpg" alt=""> 
+          <img id="testimonial-img2" src="testimonial_bg2.jpg" alt="">
+          <div id="review-box">
+            <div id="review-wrapper">
+              <div id="reviewer-name"><b>Christina Tsircas</b></div>
+              <div id="review-text">Olga is a creative, artistic individual and a wonderful photographer. She did my new author headshots and I was very satisfied with her work. It was a pleasure working with her and I would love to do so again in the future.</div>
+              <a id="review-link" href="https://www.facebook.com/christina.tsirkas/posts/pfbid02LHNAG9qYhvC6iSmbkKpi6fp9wys4Xjzdt7xCe5UTUuHFtsiEsNC5y2fGYSwViRHNl" target="_blank">View Post </a>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </div>
+
+    <!-- End of Guide section -->
+    <iframe id="sprout-iframe" src="//api.sproutstudio.com/leads/viewform/63960f8653369144f9460cbbf74557385d997f3f8eb53e6e/636870" frameborder="0" scrolling="no" style="display: block; margin: 0px; padding: 0px; width: 1px; min-width: 100%; height: 1200px; overflow:hidden;"></iframe>
+    <footer>
+      <div id="social-media-wrapper">
+          <div id="facebook" class="social-media">
+              <a href="https://www.facebook.com/olgasachkovaphotography" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50" style="null" class="icon icons8-Facebook-Filled">    <path d="M40,0H10C4.486,0,0,4.486,0,10v30c0,5.514,4.486,10,10,10h30c5.514,0,10-4.486,10-10V10C50,4.486,45.514,0,40,0z M39,17h-3 c-2.145,0-3,0.504-3,2v3h6l-1,6h-5v20h-7V28h-3v-6h3v-3c0-4.677,1.581-8,7-8c2.902,0,6,1,6,1V17z"></path></svg>
+              </a>
+          </div>
+          <div id="insta" class="social-media">
+              <a href="https://instagram.com/frauberry" target="_blank">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path></svg>
+              </a>
+          </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
