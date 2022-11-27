@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html, body, header, footer {
 
   width: 100%;
@@ -657,6 +661,11 @@ div#sprout-wrapper {
     display: inline-block;
     right: 0;
     top: 0;
+  }
+
+  .dropdown-content {
+    min-width: 152px;
+    width: 152px;
   }
 
   .dropbtn {
