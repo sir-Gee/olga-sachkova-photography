@@ -12,10 +12,6 @@ function collapseMenu(){
     
 }
 
-// (function (){
-//   changeTestimonial();
-// })();
-
 function changeTestimonial() {
   document.querySelector('#testimonial-img').src = 'testimonial_bg2.jpg';
   setTimeout(changeTestimonialBack, 5000);
@@ -52,7 +48,9 @@ let reviews = [
 
 let counter = 0;
 
-(function changeReview(){
+let myTimeOut;
+
+function changeReview(){
   document.querySelector('#reviewer-name').innerHTML = reviews[counter].name;
   document.querySelector('#review-text').innerHTML = reviews[counter].review;
   counter++;
@@ -61,7 +59,19 @@ let counter = 0;
     counter = 0;
   }
 
-  setTimeout(changeReview, 5000);
+  myTimeOut = setTimeout(changeReview, 5000);
+}
 
-  
-})();
+changeReview();
+
+// let reviewText = document.getElementById('review-text');
+// let testimonialImg = document.getElementById('testimonial-div');
+// reviewText.addEventListener('mouseover', (event)=>{
+//   event.stopPropagation();
+//   clearTimeout(myTimeOut);
+// });
+
+// testimonialImg.addEventListener('mouseout', (event)=>{
+//   event.stopPropagation();
+//   changeReview();
+// });
