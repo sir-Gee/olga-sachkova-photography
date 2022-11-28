@@ -4,18 +4,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <header>
-      <div class="grid-container">
-        <div id="logo" class="header_menu">
-          <a id="logo-link" href="#">OLGA SACHKOVA PHOTOGRAPHY</a>
-        </div>
-        <div>
-          <a href="index.html">
-            <img id="logo-img" src="logo.jpg"></img>
+    <header class="main-header">
+      <div class="main-header-container">
+        <a id="logo-link" href="#">OLGA SACHKOVA PHOTOGRAPHY</a>
+        <a href="index.html">
+            <img id="logo-img" src="logo.jpg">
           </a>
-        </div>
-        <div id="main-menu" class="header_menu">   
-          <ul id="menu" class="header_menu-items">
+        <ul id="menu" class="nav header-nav">
                 <li id="menu-item-home" class="menu-item"><a href="index.html">HOME</a></li>
                 <li id="menu-item-about" class="menu-item"><a href="#about">ABOUT</a></li>
                 <li id="menu-item-packages" class="menu-item"><a href="#packages">PACKAGES</a></li>
@@ -24,36 +19,25 @@
                 <li id="menu-item-contact" class="menu-item"><a href="#sprout-iframe">CONTACT</a></li>
                 <li id="menu-item-book" class="menu-item"><a href="book.html">BOOK</a></li>    
           </ul>
-        </div>
+          <div class="dropdown">
+            <button class="dropbtn">MENU</button>
+            <div class="dropdown-content">
+              <a href="index.html">HOME</a>
+              <a href="#about">ABOUT</a>
+              <a href="#packages">PACKAGES</a>
+              <a href="portfolio.html">GALLERY</a>
+              <a href="#guide">GUIDE</a>
+              <a href="#sprout-iframe">CONTACT</a>
+              <a href="book.html">BOOK</a>
+            </div>
+          </div>
       </div>
     </header>
 
-    <div class="dropdown">
-      <button class="dropbtn">MENU</button>
-      <div class="dropdown-content">
-        <a href="index.html">HOME</a>
-        <a href="#about">ABOUT</a>
-        <a href="#packages">PACKAGES</a>
-        <a href="portfolio.html">GALLERY</a>
-        <a href="#guide">GUIDE</a>
-        <a href="#sprout-iframe">CONTACT</a>
-        <a href="book.html">BOOK</a>
-      </div>
+    <div class="arrow">
+      &#8595;
     </div>
-    <!-- <div id="mobile-menu">
-      <button id="menu-btn" onclick="toggleMenu()">Menu</button>
-      <div id="mobile-menu-item">
-          <ul>
-              <li><a href="index.html" onclick="toggleMenu()">HOME</a></li>
-              <li><a a href="#about" onclick="toggleMenu()">About</a></li>
-              <li><a href="#packages" onclick="toggleMenu()">packages</a></li>
-              <li><a href="/portfolio" onclick="toggleMenu()">portfolio</a></li>
-              <li><a href="#guide" onclick="toggleMenu()">guide</a></li>
-              <li><a href="#sprout-iframe" onclick="toggleMenu()">Contact</a></li>
-              <li><a href="book.html" onclick="toggleMenu()">Book</a></li>
-            </ul>
-      </div>
-    </div> -->
+  
     <div id="image-wrapper">
       <img id="hero-img" src="main_background.jpg">
       <div id="middle-text">OLGA <br>SACHKOVA</div>
@@ -77,10 +61,8 @@
           <div class="container">
             <img class="photo image" src="package1.jpg">
             <div class="overlay">
-              <div class="text">3 people , 15 digits, Package does not include detailed editing</div>
-              <a href="book.html">
-                <div class="package-text">Book</div>
-              </a>
+              <div class="package-text">3 people , 15 digits, Package does not include detailed editing</div>
+              <a href="book.html" class="package-link"><div class="buttons">Book</div></a>
             </div>
           </div>
           <div class="description description-desktop">1-HOUR FAMILY OUTDOOR SESSION<br>$320</div>
@@ -93,10 +75,8 @@
           <div class="container">
             <img class="photo image" src="package2.jpg">
             <div class="overlay">
-              <div class="text">1 person , 10 digits, Package includes detailed editing</div>
-              <a href="book.html">
-                <div class="package-text">Book</div>
-              </a>
+              <div class="package-text">1 person , 10 digits, Package includes detailed editing</div>
+              <a href="book.html" class="package-link"><div class="buttons">Book</div></a>
             </div>
           </div>
           <div class="description">1-HOUR OUTDOOR PORTRAIT SESSION <br>$320</div>
@@ -108,10 +88,8 @@
           <div class="container">
             <img class="photo image" src="package3.jpg">
             <div class="overlay">
-              <div class="text">3 people , 15 digits, Package does not include detailed editing</div>
-                <a href="book.html">
-                <div class="package-text">Book</div>
-              </a>
+              <div class="package-text">3 people , 15 digits, Package does not include detailed editing</div>
+              <a href="book.html" class="package-link"><div class="buttons">Book</div></a>
             </div>
           </div>
           <div class="description">20 MINS FAMILY OUTDOOR MINI SESSION<br>$150</div>
@@ -136,7 +114,7 @@
             <div id="review-wrapper">
               <div id="reviewer-name"><b>Christina Tsircas</b></div>
               <div id="review-text">Olga is a creative, artistic individual and a wonderful photographer. She did my new author headshots and I was very satisfied with her work. It was a pleasure working with her and I would love to do so again in the future.</div>
-              <a id="review-link" href="https://www.facebook.com/christina.tsirkas/posts/pfbid02LHNAG9qYhvC6iSmbkKpi6fp9wys4Xjzdt7xCe5UTUuHFtsiEsNC5y2fGYSwViRHNl" target="_blank">View Post </a>
+              <a id="review-link" href="https://www.facebook.com/christina.tsirkas/posts/pfbid02LHNAG9qYhvC6iSmbkKpi6fp9wys4Xjzdt7xCe5UTUuHFtsiEsNC5y2fGYSwViRHNl" target="_blank"><div class="buttons text-design">View Post</div></a>
             </div>
           </div>          
         </div>
