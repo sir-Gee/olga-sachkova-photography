@@ -20,7 +20,7 @@ header {
   position: fixed;
   background-color: #f9f5e7f7;
   width: 100%;
-  z-index:1;
+  z-index: 2;
 }
 
 .main-header-container {
@@ -33,6 +33,124 @@ header {
   flex-grow: 1;
   text-align: end;
 }
+
+.about-pics-container {
+  position: relative;
+  /* display: flex; */
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+#about-left-bg {
+  position: absolute;
+  top: 15%;
+  object-fit: cover;
+  max-width: 500;
+  width: 30%;
+  border: 5px solid whitesmoke;
+}
+
+img#about-right-bg {
+  object-fit: cover;
+  width: 130%;
+}
+
+div#camera-click {
+  position: absolute;
+  left: 13.7%;
+  top: 33.5%;
+  width: 14px;
+  height: 14px;
+  background-color: black;
+  border-radius: 50%;
+  opacity: 0;
+  animation-delay: 1s;
+}
+
+ #about-left-bg:hover~#camera-click
+ {
+  animation: cameraClick 0.3s 0.1s ease forwards;
+}
+
+ #about-left-bg:hover~#finger-click 
+ {
+  animation: cameraClick 0.3s ease forwards;
+}
+
+@keyframes cameraClick {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+  
+}
+
+div#finger-click {
+  position: absolute;
+  left: 16%;
+  top: 31%;
+  width: 4px;
+  height: 10px;
+  background-color: #c5a692;
+  border-radius: 50%;
+  opacity: 0;
+  
+}
+
+@keyframes fingerClick {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+span#greeting {
+  position: absolute;
+  top: -41px;
+  font-family: "Oooh Baby", serif;
+  transform: rotate(351deg);
+  font-size: 34px;
+  letter-spacing: 0.2em;
+  word-spacing: 0.4em;
+  left: 75px;
+}
+
+#learn-more {
+  position: absolute;
+  z-index: 1;
+  top: 35%;
+  left: 45%;
+  background-color: #d9c9b3;
+  color: white;
+  border-radius: 15%;
+  display: none;
+}
+
+#learn-more:hover {
+  background-color: #e7c495;
+}
+
+#learn-more-section {
+  width: 100%;
+  display: none;
+  background-color: #f9f5e7f7;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-style: normal;
+  transition: display 2s;
+}
+
 
 #logo-link { 
   margin: 0 20px;
@@ -112,6 +230,8 @@ a:hover {
     color: orange;
 }
 
+
+
 #hero-img {
   width: 100%;
   height: auto;
@@ -174,7 +294,7 @@ a.active-now {
   background: #F1F1F0;
   scroll-margin-top: 116px;
   margin: 0;
-  padding: 20;
+  padding: 0;
 }
 
 #about h2 {
@@ -182,7 +302,8 @@ a.active-now {
 }
 
 #about p {
-  width: 35%;
+  position: absolute;
+  width: 37%;
   text-align: left;
   font-family: 'Raleway';
   font-weight: 400;
@@ -190,10 +311,14 @@ a.active-now {
   font-size: 15px;
   line-height: 2.5em;
   margin: auto;
+  left: 34%;
+  top: 20%;
+  z-index: 1;
 }
 
 #aboutMe-wrapper {
   position: relative;
+  z-index: 1;
 }
 
 h2, #packages, #reviewer-name, #review-link {
@@ -402,7 +527,15 @@ footer{
   display: inline-block;
 }
 
-#social-media-wrapper{
+#social-media-wrapper {
+  text-align: center;
+  top: 50%;
+  position: absolute;
+  width: 100%;
+}
+
+#social-media-wrapper div {
+  margin: auto 20;
 }
 
 div#sprout-wrapper {
@@ -514,7 +647,6 @@ div#sprout-wrapper {
 
 .package-text {
   color: black;
-  font-size: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -522,7 +654,21 @@ div#sprout-wrapper {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  text-decoration: none;
+  color: rgba(77,77,77,1);
+  text-transform: uppercase;
+  line-height: 1.5;
+  letter-spacing: 0.4em;
+  font-size: 14px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-style: normal;
+  width: 100%;
 /* END OF OVERLAY */
+}
+
+.package-text ul {
+  list-style: none;
 }
 
 .overlay a {
@@ -582,10 +728,11 @@ div#sprout-wrapper {
   }
 
   #about p {
-    width: 74%;
-    font-size: small;
+    width: 64%;
+    font-size: medium;
     line-height: 1.5em;
-  }
+    top: 10%;
+}
 
   #review-box {
     top: 11%;
@@ -642,9 +789,31 @@ div#sprout-wrapper {
   @keyframes movingArrow {
     100% {
       opacity: 1;
-      top: 200px;
+      top: 220px;
       color: rgb(243, 233, 233);
     }
+  }
+
+  span#greeting{
+    font-size: 20px;
+    top: -20;
+    left: 30;
+  }
+
+  #learn-more {
+    display: block;
+  }
+
+  #learn-more-section {
+    padding: 5 20;
+  }
+
+  #about p {
+    width: 70%;
+  }
+
+  #image-wrapper {
+    top: 24px;
   }
 
   #activeSlide {
@@ -708,6 +877,16 @@ div#sprout-wrapper {
 
   .package {
     width: 100%
+  }
+
+  #sprout-iframe {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    width: 1px;
+    min-width: 100%;
+    height: 1235px;
+    overflow: hidden;
   }
 }
 
