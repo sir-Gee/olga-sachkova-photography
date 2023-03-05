@@ -143,6 +143,10 @@ span#greeting {
   background-color: #e7c495;
 }
 
+#learn-more:focus {
+  background: transparent;
+}
+
 #learn-more-section {
   width: 100%;
   display: none;
