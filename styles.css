@@ -129,8 +129,8 @@ span#greeting {
 #learn-more {
   position: absolute;
   z-index: 1;
-  top: 35%;
-  left: 45%;
+  top: 87%;
+  left: 44%;
   background-color: #d9c9b3;
   color: white;
   border-radius: 15%;
@@ -251,6 +251,7 @@ a:hover {
   color: rgba(255,255,255,0.85);
   text-transform: uppercase;
   letter-spacing: 1.2em;
+  color:floralwhite;
   /* font-size: 62px; */
   font-size:5vw;
   animation: appearing 3s ease-in-out;
@@ -338,7 +339,7 @@ h2, #packages, #reviewer-name, #review-link {
   position: relative;
   width:100%;
   height: auto;
-  background: #F1F2F9;
+  background: #f9f5e7f7;
   scroll-margin-top: 116px;
   padding-top: 20px;
 }
@@ -491,7 +492,7 @@ h2{
   display:inline-block;
   width:32%;
   margin:5px;
-  background-color: #f7f8f8;
+  background-color: #f9f5e7f7;
 }
 
 .photo {
@@ -796,8 +797,9 @@ div#sprout-wrapper {
 
   span#greeting{
     font-size: 20px;
-    top: -20;
-    left: 30;
+    top: -114;
+    left: 134px;
+    color: black;
   }
 
   #learn-more {
@@ -809,7 +811,10 @@ div#sprout-wrapper {
   }
 
   #about p {
-    width: 70%;
+    width: 66%;
+    top:51%;
+    left:6%;
+    color: floralwhite;
   }
 
   #image-wrapper {
