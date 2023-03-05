@@ -64,14 +64,12 @@ function changeReview(){
 
 changeReview();
 
-// let reviewText = document.getElementById('review-text');
-// let testimonialImg = document.getElementById('testimonial-div');
-// reviewText.addEventListener('mouseover', (event)=>{
-//   event.stopPropagation();
-//   clearTimeout(myTimeOut);
-// });
+document.querySelector('#learn-more').addEventListener('click', () => {
+  let learnMoreSection =  document.getElementById('learn-more-section');
 
-// testimonialImg.addEventListener('mouseout', (event)=>{
-//   event.stopPropagation();
-//   changeReview();
-// });
+  if(learnMoreSection.style.display === 'none' || learnMoreSection.style.display === ''){
+    learnMoreSection.style.display = 'block';
+  } else if (learnMoreSection.style.display === 'block') {
+    learnMoreSection.style.display = 'none';
+  }
+});
