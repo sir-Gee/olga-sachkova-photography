@@ -129,12 +129,14 @@ span#greeting {
 #learn-more {
   position: absolute;
   z-index: 1;
-  top: 87%;
-  left: 44%;
-  background-color: #d9c9b3;
+  top: 89%;
+  left: 51%;
+  background: transparent;
   color: white;
   border-radius: 15%;
   display: none;
+  border: none;
+  transform: scale(3,3);
 }
 
 #learn-more:hover {
