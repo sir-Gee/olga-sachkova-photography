@@ -795,6 +795,10 @@ div#sprout-wrapper {
     }
   }
 
+  #additional-description-desktop {
+    display: none;
+  }
+
   span#greeting{
     font-size: 20px;
     top: -114;
